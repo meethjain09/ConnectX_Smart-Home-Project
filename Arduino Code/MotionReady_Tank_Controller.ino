@@ -18,10 +18,10 @@ LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 // Measure from the ultrasonic sensor face to the tank's inside bottom.
 // Change this to the actual inside depth used in the model/simulation.
-const float TANK_DEPTH_CM = 160.0;
+const float TANK_DEPTH_CM = 150.0;
 const float AUTO_START_PERCENT = 25.0;
 const float AUTO_STOP_PERCENT = 90.0;
-const float MANUAL_HIGH_LIMIT_PERCENT = 95.0;
+const float MANUAL_HIGH_LIMIT_PERCENT = 94.0;
 const unsigned long SENSOR_INTERVAL_MS = 500;
 const unsigned long LCD_INTERVAL_MS = 500;
 

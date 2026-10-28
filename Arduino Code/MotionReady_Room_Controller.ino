@@ -19,7 +19,7 @@ const byte PIN_ECHO       = A4;  // HC-SR04 echo (uses analog pin as digital inp
 LiquidCrystal lcd(2, 3, 4, 5, 6, 7); // RS, E, D4, D5, D6, D7
 Servo doorServo;
 
-const int DARK_THRESHOLD = 450;       // Calibrate from Serial Monitor / Tinkercad readings.
+const int DARK_THRESHOLD = 460;       // Calibrate from Serial Monitor / Tinkercad readings.
 const float FAN_ON_C = 28.0;          // Fan turns on at or above this temperature.
 const float FAN_OFF_C = 26.0;         // Fan turns off at or below this temperature.
 const float DOOR_OPEN_CM = 25.0;      // Open door when someone is this close.
@@ -27,7 +27,7 @@ const unsigned long DOOR_HOLD_MS = 3000;
 const int DOOR_CLOSED_ANGLE = 0;
 const int DOOR_OPEN_ANGLE = 90;
 
-float temperatureC = 25.0;
+float temperatureC = 26.0;
 int lightReading = 0;
 bool fanOn = false;
 bool lampOn = false;
